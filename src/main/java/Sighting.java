@@ -1,4 +1,3 @@
-import java.sql.Timestamp;
 import java.util.List;
 import org.sql2o.*;
 
@@ -6,7 +5,6 @@ public class Sighting {
     private String ranger ;
     private int animal_id;
     private String location;
-    private Timestamp time;
     private int id;
 
     public Sighting(String ranger,String location, int animal_id){
