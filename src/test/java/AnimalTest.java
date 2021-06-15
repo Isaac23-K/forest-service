@@ -26,12 +26,6 @@ public class AnimalTest {
         assertEquals("panda", testAnimal.getName());
     }
 
-//    @Test
-//    void animal_instantiatesWithId_int() {
-//        Animal testAnimal = new Animal("panda","yes","healthy","2");
-//        assertEquals(2, testAnimal.getId());
-//    }
-
     @Test
     void animal_instantiatesWith_endangered() {
         Animal testAnimal = new Animal("panda","yes","healthy","young");
