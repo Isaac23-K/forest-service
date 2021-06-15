@@ -1,0 +1,74 @@
+{{#partial "title" }} Wildlife  Tracker  {{/partial}}
+<!--form.hbs.-->
+{{#partial "content"}}
+    <h1 style="text-align:center;" id="header">WILDLIFE TRACKER</h1>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Add Animals</h1>
+                <form action="/show" method="post">
+                    <div class="form-group">
+                        <label for="rangerName">Ranger Name</label>
+                        <input type="text" id="ranger" name="rangerName" class="form-control" placeholder="Ranger's name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="animal">Animal Name</label>
+                        <input type="text" id="name" name="animal" class="form-control" placeholder="Enter Animals name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="endangeredAnimal">Endangered Animal :</label>
+                        <br>
+                        <label for="check">
+                            <input type="text" id="check" name="check" class="form-control" placeholder="Is it endangered ?">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>Location</label><br>
+                        <select name="location">
+                            <option>Choose location...</option>
+                            <div id="location">
+                                <option value="Zone A">Zone A</option>
+                                <option value="Zone B">Zone B</option>
+                                <option value="Zone C">Zone C</option>
+                            </div>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Animal's health</label><br>
+                        <select name="health">
+                            <option>Condition...</option>
+                            <div id="age">
+                                <option value="Ill">Ill</option>
+                                <option value="Okay">Okay</option>
+                                <option value="Healthy">Healthy</option>
+                            </div>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Age</label><br>
+                        <select name="age">
+                            <option>Estimate Age...</option>
+                            <div id="age">
+                                <option value="Newborn">Newborn</option>
+                                <option value="Young">Young</option>
+                                <option value="Adult">Adult</option>
+                            </div>
+                        </select>
+                    </div>
+
+                    <button class="btn btn-success" type="submit">add Animal
+                        <span class="glyphicon glyphicon-plus"></span></button>
+                </form>
+            </div>
+            </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+    </div>
+    </body>
+{{/partial}}
+{{>layout.hbs}}
