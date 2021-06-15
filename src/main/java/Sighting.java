@@ -1,13 +1,11 @@
 import java.sql.Timestamp;
 import java.util.List;
 import org.sql2o.*;
-import java.util.Date;
 
 public class Sighting {
     private String ranger ;
     private int animal_id;
     private String location;
-    //private Date date = new Date();
     private Timestamp time;
     private int id;
 
@@ -15,7 +13,6 @@ public class Sighting {
         this.animal_id = animal_id;
         this.location = location;
         this.ranger = ranger;
-        // this.time = new Timestamp(date.getTime());
     }
 
     public String getRanger(){
