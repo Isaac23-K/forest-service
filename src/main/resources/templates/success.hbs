@@ -1,11 +1,18 @@
 {{#partial "content"}}
-    <div class="col-md-4 w-50">
+    <div class="wrap">
         <p class="lead">Success!</p>
         <p>Your changes have been saved.</p>
         <div class="alert alert-success">
             <a href="/" class="alert-link">Go to home page</a>
         </div>
+        {{#each animals}}
+            <h1>Details Recorded </h1>
+            <li>{{name}}</li>
+            <li>{{endangered}}</li>
+            <li>{{health}}</li>
+            <li>{{age}}</li>
+        {{/each}}
+        </body>
     </div>
 {{/partial}}
-
 {{> layout.hbs}}
