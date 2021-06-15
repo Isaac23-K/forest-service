@@ -1,0 +1,14 @@
+body {
+    font-weight: bolder;
+    color:white;
+    background-image:url('https://wallpaper.dog/large/10976960.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    font-weight: bolder;
+}
+.wrap {
+    background-image:url('https://wallpaper.dog/large/10976960.jpg');
+     background-size:cover;
+     background-repeat:no-repeat;
+     background-attachment: fixed;
+}
