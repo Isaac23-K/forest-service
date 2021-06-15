@@ -18,12 +18,17 @@ public class App {
     public static void main(String[] args) {
         port(getHerokuAssignedPort());
         staticFileLocation("/public");
+
+
         //get sightings
         get("/", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             return new ModelAndView(model, "homepage.hbs");
         }, new HandlebarsTemplateEngine());
 
+
+
+        // for the success message
         get("/success", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
             List<Animal> animals = Animal.all();
